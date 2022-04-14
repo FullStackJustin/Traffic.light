@@ -1,4 +1,12 @@
-
+.pole {
+    height: 10px;
+    width: 3px;
+    background-color:black;
+}
+.buttonNpole {
+    display: flex;
+    justify-content: center;
+}
 .traffic-light {
     background: black;
     padding: 10px;
