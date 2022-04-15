@@ -8,21 +8,21 @@ const Home = () => {
 			<div className="pole"></div>
 			<div className="traffic-light">
 				<div
-					onClick={() => setSelectedColor("red")}
 					className={
-						"light red" + (selectedColor === "red" ? "glow" : "")
-					}></div>
+						"light red" + (setSelectedColor === "red" ? "glow" : "")
+					}
+					onClick={() => selectedColor("red")}></div>
 				<div
-					onClick={() => setSelectedColor("yellow")}
+					onClick={() => selectedColor("yellow")}
 					className={
 						"light yellow" +
-						(selectedColor === "yellow" ? "glow" : "")
+						(setSelectedColor === "yellow" ? "glow" : "")
 					}></div>
 				<div
-					onClick={() => setSelectedColor("green")}
+					onClick={() => selectedColor("green")}
 					className={
 						"light green" +
-						(selectedColor === "green" ? "glow" : "")
+						(setSelectedColor === "green" ? "glow" : "")
 					}></div>
 			</div>
 		</div>
